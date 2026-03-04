@@ -18,6 +18,7 @@ app.use(cors());
 
 // Body parser
 app.use(express.json());
+app.use(express.urlencoded({extended: true}))
 
 // Mount routers
 app.use('/api/auth', authRoutes);
